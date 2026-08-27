@@ -1,6 +1,6 @@
 cask "imark" do
-  version "0.4.0"
-  sha256 "e40f252f78bec989554365d0ac4a3fc05cdffbcc98568ee204295d4b73b80bfa"
+  version "0.5.0"
+  sha256 "8fec7c88085cbd02e1c3fa0b15b09f291530b03609bc6f75131afc14d2989b97"
 
   url "https://github.com/migsilva89/imark/releases/download/v#{version}/Imark-#{version}.dmg",
       verified: "github.com/migsilva89/imark/"
@@ -13,9 +13,12 @@ cask "imark" do
     strategy :github_latest
   end
 
+  auto_updates true
+
   depends_on macos: :sonoma
 
   app "Imark.app"
+  binary "#{appdir}/Imark.app/Contents/Resources/imark"
 
   zap trash: [
     "~/Library/Application Support/Imark",
