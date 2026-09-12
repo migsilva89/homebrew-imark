@@ -1,6 +1,6 @@
 cask "imark" do
-  version "0.5.1"
-  sha256 "1ac93a6380d1baf4c621137bc2ea6c48052c5543e5c7810d33948a1ceb7ff7fa"
+  version "0.6.0"
+  sha256 "4251141b6fdbe668166bd6c5e4b263250ce2051254c0420351467446cf6e4c01"
 
   url "https://github.com/migsilva89/imark/releases/download/v#{version}/Imark-#{version}.dmg",
       verified: "github.com/migsilva89/imark/"
